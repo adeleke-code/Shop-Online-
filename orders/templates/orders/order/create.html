@@ -1,4 +1,7 @@
 {% extends "shop/base.html" %}
+
+
+
 {% block title %}
 Checkout
 {% endblock %}
@@ -8,7 +11,7 @@ Checkout
 <h1>Checkout</h1>
 <div class="order-info">
     <h3>Your order</h3>
-    <ul>
+    <ul>      
         {% for item in cart %}
         <li>
             {{ item.quantity }}x {{ item.product.name }}
@@ -23,5 +26,4 @@ Checkout
                 <p><input type="submit" value="Place order"></p>
                 {% csrf_token %}
                 </form>
-                
 {% endblock %}
