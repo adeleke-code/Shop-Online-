@@ -1,1 +1,1 @@
-github_guide
+github
